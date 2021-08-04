@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+
+:root{
+    --main-color: rgba(41, 128, 185, 1.0);
+    --main-color-light: rgba(41, 128, 185, 0.2);
+    --accent-color: rgba(243, 156, 18, 1.0);
+    --accent-color-light: rgba(243, 156, 18, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-image: linear-gradient(to bottom right, var(--main-color), var(--main-color-light));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main-title{
+    font-size: 1.5rem;
+}
+
+.header, .task-form{
+    min-height: 20vh;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item{
+    padding: .5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #fff;
+    outline: none;
+}
+
+.btn-add-task{
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.btn-add-task:hover{
+    color: #fff;
+    background-color: var(--accent-color);
+}
+
+.task-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-list{
+    list-style: none;
+    min-width: 40%;
+}
+
+.task-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.2rem;
+    background: #fff;
+    transition: .5s ease-in-out;
+}
+
+.task-definition{
+    flex: 1;
+    padding: .2rem;
+}
+
+.task-btn{
+    background-color: var(--accent-color);
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: .7rem;
+}
+
+.task-btn-delete{
+    background-color:rgb(236, 54, 54);
+}
+
+.task-completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.far {
+    pointer-events: none;
+}
+
+.getLost{
+    transform: scale(0);
+}

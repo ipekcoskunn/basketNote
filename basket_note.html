@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="main.css">
+    <title>Basket Note</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="main-title">Not Sepeti</h1>
+    </header>
+
+    <form class="task-form" action="#">
+        <input type="text" class="form-item input-task" placeholder="Notu Giriniz..">
+        <button class="form-item btn-add-task" type="submit">
+            <i class="far fa-plus-square"></i>
+        </button>
+    </form>
+
+    <div class="task-container">
+        <ul class="task-list">
+            <div class="task-item task-completed">
+                <li class="task-definition">Markete Git</li>
+                <button class="task-btn task-btn-completed">
+                    <i class="far fa-check-square"></i>
+                </button>
+                <button class="task-btn task-btn-delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+
+            <div class="task-item">
+                <li class="task-definition">Markete Git</li>
+                <button class="task-btn task-btn-completed">
+                    <i class="far fa-check-square"></i>
+                </button>
+                <button class="task-btn task-btn-delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        </ul>
+    </div>
+
+
+    <script src="basket_note.js"></script>
+</body>
+
+</html>
